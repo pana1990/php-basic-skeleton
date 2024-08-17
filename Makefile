@@ -18,7 +18,7 @@ composer-install:
 	docker compose run --rm -u ${UID}:${GID} ${DOCKER_PHP_SERVICE} composer install
 
 bash:
-	docker compose run --rm -u ${UID}:${GID} ${DOCKER_PHP_SERVICE} sh
+	docker compose run --rm -u ${UID}:${GID} ${DOCKER_PHP_SERVICE} bash
 
 logs:
 	docker compose logs -f ${DOCKER_PHP_SERVICE}
